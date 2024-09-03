@@ -58,7 +58,7 @@
 	<script>
 		async function createOrder(){
 			console.log("Order Creation Started");
-			const response=await fetch('http://localhost:5551/create-order',{
+			const response=await fetch('http://localhost:####/create-order',{
 				method:'POST',
 				headers:{
 					'Content-Type':'application/json'
@@ -81,7 +81,7 @@
 			e.preventDefault();
 			const order=await createOrder();
 			var options={
-				"key":"rzp_test_5MI8ZRFXYbQcds",
+				"key":"##############",
 				"amount":order.amount,
 				"currency":'INR',
 				"name":"Suvasish Pradhan",
